@@ -47,7 +47,7 @@ var Media = function(src, successCallback, errorCallback, statusCallback) {
     this.statusCallback = statusCallback;
     this._duration = -1;
     this._position = -1;
-    this.isCompressed = true; // default true for compression enabling
+    this.isCompressed = false; // default false for compression disabled
     exec(null, this.errorCallback, "Media", "create", [this.id, this.src]);
 };
 

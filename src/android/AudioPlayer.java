@@ -99,7 +99,7 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
     private boolean prepareOnly = true;     // playback after file prepare flag
     private int seekOnPrepared = 0;     // seek to this location once media is prepared
 
-    private boolean isCompressed = true;
+    private boolean isCompressed = false;
     private short channels = 2;
     private int sampleRate = 8000;
     private short sampleSize = 16;
